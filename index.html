@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Qriotix Devices</title>
+  <link rel="stylesheet" href="chovis.css">
+</head>
+<body>
+  <h1>Qriotix Devices</h1>
+
+    <div id="warning" class="warning hidden"></div>
+    <div id="updateIndicator" class="update-indicator hidden">New firmware version available!</div>
+
+    <div class="card">
+    <div id="initialView">
+      <p>Click the button below to discover devices.</p>
+      <button id="discoverBtn">Discover Devices</button>
+      <div id="devicesList"></div>
+    </div>
+
+    <div id="selectedView" class="hidden">
+      <p><strong>Selected device:</strong> <span id="selectedName"></span></p>
+      <div>
+        <button id="syncBtn">Sync Time</button>
+        <button id="updateBtn">Update</button>
+        <button id="confirmUpdateBtn" class="hidden">Confirm Update</button>
+        <button id="quitUpdateBtn" class="hidden">Quit Update</button>
+      </div>
+      <div id="status"></div>
+    </div>
+  </div>
+
+  <script src="chavi.js" defer></script>
+</body>
+</html>
